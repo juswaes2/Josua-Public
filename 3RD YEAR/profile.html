@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+    <link rel="stylesheet" href="design.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top 
+                    }, 850, function(){
+                        window.location.hash = hash;
+                 });
+                }
+             });
+            });
+    </script>
+</head>
+<body>
+    <div class="banner" id="home">
+    <header class="header">
+        <a href="#" class="logo"> </a>
+
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#info">MY INFO</a>
+            <a href="#skills">MY SKILLS </a>
+            <a href="#experience">MY EXPERIENCES </a>
+            <a href="#gallery">MY GALLERY </a>
+        </nav>
+    </header>
+    
+    <section class="home" >
+        <div class="home-image">
+            <img src="img/j.png" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm Josua Esmenda</h1>
+            <h3>3rd Year College</h3>
+            <p>Web Development at University of Iloilo
+            </p>
+
+        </div>
+    
+
+    
+    </section>
+    </div>
+    
+
+    <!---MY INFO  page-->
+
+    <div class="about-section" id="info">
+        <div class="heading">
+            <h1>MY INFORMATION</h1>
+            <p>About ME</p>
+        </div>
+
+        <div class="container">
+            <section class="about">
+                <div class="about-image">
+                    <img src="img/jos.jpg">
+                </div>
+
+                <div class="about-content">
+
+                <h2>Josua Esmenda</h2>
+                <p>Hi, Im Josua Esmenda, 3rd Year College at University of Iloilo specialize in Web Development</p>
+                <P>Date of Birth: November 22, 2001</P>
+                <P>Address: Brgy. Taban-Manguining, Alimodian, Iloilo</P>
+                <P>Status: Single</P>
+
+                
+                </div>
+                
+            </section>
+        </div>
+    </div>
+    
+
+
+    <!--My skills page-->
+
+        <div class="skills" id="skills">
+            <h1>My Skills</h1>
+            <div class="content">
+                <div class="left">
+                    <h1>My Creative Skills</h1>
+                    <p>I'm Josua Esmenda, my creativity skills in this specialize track in Information Technology is not 
+                        really impressive. I can do basic web design and simple web but when I'm doing actvities I can learn
+                        and improving my skills.
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="line">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="bars html"></div>
+                    </div>
+
+                    <div class="line">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="bars css"></div>
+                    </div>
+
+                    <div class="line">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="bars php"></div>
+                    </div>
+
+                    <div class="line">
+                        <div class="info">
+                            <span>JAVA</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="bars js"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--my experience page-->
+         <div class="body" id="experience">
+        <div class="title">
+            <h1>My EXPERIENCE</h1>
+            <p>Information Technology experiences in University of Iloilo </p>
+        </div>
+        <div class="timeline">
+            <div class="checkpoint">
+                <div>
+                    <h2>HTML</h2>
+                    <p>Experience when i was in 2nd year college under Ryan Valeriano. Making
+                         basic website using html.HTML, or Hypertext Markup Language, is a markup 
+                         language for the web that defines the structure of web pages.</p>
+            </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>CSS</h2>
+                <p>Making design in HTML in website.CSS stands for Cascading Style 
+                    Sheets. CSS describes how HTML elements are to be 
+                    displayed on screen, paper, or in other media.</p>
+        </div>
+    </div>
+        <div class="checkpoint">
+        <div>
+            <h2>PHP</h2>
+            <p>Experience when i was in 2nd year college under Ryan Valeriano. This computer language
+                helps to create connect your data in database in your website.PHP is an open-source 
+                server-side scripting language that many devs use for web development. </p>
+        </div>
+        </div>
+        <div class="checkpoint">
+            <div>
+                <h2>JAVA</h2>
+                <p>Experience when I was in 1st year college under Jubert Balmes. Java is 
+                    an object-oriented programming
+                     language that produces software for anothers platforms. It can create application for mobiles.</p>
+        </div>
+    </div>
+    </div>
+         </div>
+
+         <!--gallerypage-->
+
+         <div class="gallery" id="gallery">
+    
+            <div class="gallery-container">
+                <h1>My Gallery</h1>
+                <div class="top-content">
+                    <h3>Pictures</h3>
+                    <label for="check1">Photo Gallery</label>
+                    
+                </div>
+    
+                <div class="photo-gallery">
+                    <div class="pic Events">
+                        <img src="img/1.jpg">
+                    </div>
+    
+                    <div class="pic Bonding">
+                        <img src="img/2.jpg">
+                    </div>
+    
+                    <div class="pic Outing">
+                        <img src="img/3.jpg">
+                    </div>
+    
+                    <div class="pic Events">
+                        <img src="img/4.jpg">
+                    </div>
+    
+                    <div class="pic Bonding">
+                        <img src="img/5.jpg">
+                    </div>
+    
+                    <div class="pic Outing">
+                        <img src="img/6.jpg">
+                    </div>
+    
+                    <div class="pic Events">
+                        <img src="img/7.jpg">
+                    </div>
+    
+                    <div class="pic Bonding">
+                        <img src="img/8.jpg">
+                    </div>
+    
+
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <p class="copyright">Social Media Accounts</p>
+        </footer>
+    </div>
+
+</body>
+</html>
