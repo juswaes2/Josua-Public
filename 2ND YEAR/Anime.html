@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+   <style>
+    *{
+        box-sizing: border-box;
+    }
+    .body{
+        margin: 0;
+
+    }
+    .row{
+        padding: 50px;
+    }
+    
+    .col1{
+        width: 25%;
+        padding: 10px 10px 20px 10px;
+        border: 2px solid black;
+        background-color: aquamarine;
+        box-shadow: 10px 10px 5px grey;
+        float: left;
+        -ms-transform: rotate(7deg);
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg);
+    }
+    .col1 span{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .col1:hover{
+        transform: rotate(0deg);
+    }
+    .col2{
+        width: 25%;
+        padding: 10px 10px 20px 10px;
+        border: 2px solid black;
+        background-color: whitesmoke;
+        box-shadow: 10px 10px 5px grey;
+        float: left;
+        -ms-transform: rotate(-8deg);
+        -webkit-transform: rotate(-8deg);
+        transform: rotate(-8deg);
+    }
+    .col2 span{
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    .col2:hover{
+        transform: rotate(0deg);
+    }
+    .row:after{
+        content: "  ";
+        display: table;
+        clear: both;
+    }
+    @media screen and (max-width:600px){
+        .col1{
+            width: 100%;
+        }
+        .col2{
+            width: 100%;
+    }
+}
+
+
+    
+
+   </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col1">
+            <img src="img/naruto.png" width="100%">
+            <span>Naruto</span>
+            <p class="desc2">Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. 
+                It tells the story of Naruto Uzumaki,
+                 a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village</p>
+        </div>
+
+        <div class="col2">
+            <img src="img/na.jpg" width="100%">
+            <span>Soul Eater</span>
+            <p class="desc2">Soul Eater is a Japanese manga series written and 
+                illustrated by Atsushi Ohkubo. Set at the "Death Weapon Meister Academy", the series revolves around three teams, 
+                each consisting of a weapon meister and weapon that can transform into a humanoid</p>
+    </div>
+    <div class="row">
+        <div class="col1">
+            <img src="img/titan.webp" width="100%">
+            <span>Attack on Titan</span>
+            <p class="desc2">It is set in a world where humanity is
+                 forced to live in cities surrounded by three enormous walls that 
+                protect them from gigantic man-eating humanoids referred to as Titans</p>
+        </div>
+
+        <div class="col2">
+            <img src="img/blood.jpg" width="100%">
+            <span>Blood C</span>
+            <p class="desc2">Blood-C focuses on Saya Kisaragi, an outwardly normal 
+                teenage high school girl who serves as a shrine maiden to a country town; in reality, she is a skilled 
+                swordswoman charged by her father to defeat Elder Bairns, monsters who feed on human blood</p>
+        </div>
+    
+</body>
+</html>

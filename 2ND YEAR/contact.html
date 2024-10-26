@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODER</title>
+</head>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(img/yellow.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;        
+          }
+          .top-nav{
+            display: flex;
+            justify-content: center;
+            
+          }
+          .nav{
+            position:fixed;
+            display: flex;
+            justify-content: center;
+            
+
+          }
+          .nav ul{
+            display: flex; 
+          }
+          .nav ul li{
+            list-style-type: none;
+            margin: 5px;
+            font-size: 30px ;
+            font-weight: bold;
+            
+          }
+          .nav ul li a{
+            text-decoration: none;
+            color:white;
+            padding: 5px;
+            border-radius: 5px;
+            transition: 0.5s all ease-in;
+            font-family: sans-serif;
+            font-weight: bold;
+          }
+          .nav ul li a:hover{
+            background-color:rgb(0, 255, 128);   
+            color: black;
+      
+          }
+          .logo{
+            position: fixed;
+            left: 50px;
+            font-family: sans-serif;
+            color: orangered;
+            font-size: 20px ;
+          }
+            .logo:hover{
+              color:yellowgreen;   
+          }
+
+          .contact-form{
+            
+            width: 50%;
+            max-width: 600px;
+            background: rgba(255, 255, 0, 0.493);
+            position: absolute;
+            top: 50%;
+            left: 50%;   
+            transform: translate(-50%, -50%);
+            padding: 30px 40px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 20px #000000;
+            font-family: sans-serif;
+          }
+          .contact-form h1{
+            margin-top: 0;
+            font-weight: 200;
+          }
+          .txtb{
+            border: 1px solid black;
+            margin:8px 0;
+            padding: 12px 18px;
+            border-radius: 8px;
+          }
+          .txtb label{
+            display: block;
+            text-align: left;
+            color: white;
+            text-transform: uppercase;
+            font-size: 14px;
+
+          }
+          .txtb input,.txtb textarea{
+            width: 100%;
+            border: none;
+            background: none;
+            outline: none;
+            font-size: 18px;
+            margin-top: 6px;
+          }
+          
+          .but{
+            padding: 10px;
+            padding-left: 100px;
+            padding-right: 100px;
+            font-weight: bold;
+            font-size: large;
+            border-radius: 10px;
+          }
+          .but:hover{
+            background-color:orange;
+            color: white;
+            transition: 0.5s all ease;
+          }
+        
+        
+        
+
+
+    </style>
+    <body>
+      <div class="top-nav">
+        <div class="logo">
+          <h1>FOODER</h1>
+
+       </div>
+       <div class="contact-form">
+        <h1>Contact Us</h1>
+
+        <div class="txtb">
+          <label>Full Name:</label>
+          <input type="text" name="" value="" placeholder="">
+        </div>
+
+        <div class="txtb">
+          <label>Email:</label>
+          <input type="email" name="" value="" placeholder="">
+        </div>
+       
+       <div class="txtb">
+          <label>Phone Number:</label>
+          <input type="text" name="" value="" placeholder="">
+        </div>
+
+        <div class="txtb">
+          <label>Message:</label>
+          <textarea></textarea>
+        </div>
+
+        <button class="but">Send</button>
+       
+       </div>
+
+        <div class="nav">
+          <ul>
+              <li> <a href="home.html">Home</a></li>
+              <li><a  href="menu.html">Menu</a></li>
+              <li><a href="arrival.html">New Arrival</a></li>
+              <li><a class="active" href="contact.html">Contact Us</a></li>
+          </ul>       
+      </div>
+
+       
+   
+
+    </body>
+</html>

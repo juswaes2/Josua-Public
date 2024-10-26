@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODER</title>
+</head>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(img/yellow.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+          }
+
+          .top-nav{
+            display: flex;
+            justify-content: center;
+            
+          }
+          .nav{
+            position:fixed;
+            display: flex;
+            justify-content: center;
+           
+
+          }
+          .nav ul{
+            display: flex; 
+          }
+          .nav ul li{
+            list-style-type: none;
+            margin: 5px;
+            font-size: 30px ;
+            font-weight: bold;
+            
+          }
+          .nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            transition: 0.5s all ease-in;
+            font-family: sans-serif;
+            font-weight: bold;
+          }
+          .nav ul li a:hover{
+            background-color:rgb(0, 255, 128);  
+            color: black; 
+      
+          }
+          .logo{
+            position: fixed;
+            left: 50px;
+            font-family: sans-serif;
+            color: orangered;
+            font-size: 20px ;
+          }
+            .logo:hover{
+              color:yellowgreen;
+          
+          }
+          .items{
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            padding: 30px 20px;
+            grid-column-gap:20px;
+            grid-row-gap: 30px;
+            padding-top: 90px;
+          }
+          .item img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover ;
+            cursor: pointer;
+            transition: 0.5 ease;
+          }
+          .item img:hover{
+            transform: scale(1.04);
+          }
+          .item h4{
+            padding: 5px;
+            text-align: center;
+            font-family: cursive;
+            color: white;
+            font-size: 20px;
+          }
+        
+          .item button{
+            padding: 5px 30px;
+            border: none;
+            outline: none;
+            background-color:rgb(0, 255, 128);
+            color: black;     
+            display: block;
+            border-radius: 4px;
+            font-size: 20px;
+            margin: 0 auto;
+            transition: 0.5s all;
+           
+          }
+          .item button:hover{
+            transform: scale(1.08);
+          }
+
+
+    </style>
+    <body>
+      <div class="top-nav">
+        <div class="logo">
+          <h1>FOODER</h1>
+       </div>
+
+        <div class="nav">
+          <ul>
+              <li> <a href="home.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="arrival.html">New Arrival</a></li> 
+              <li><a class="active" href="next15.html">Next</a></li>
+              <li><a class="active" href="next13.html">Back</a></li>
+
+          </ul>       
+        </div>
+      </div>
+
+       <section class="items">
+        <div class="item">
+            <img src="vegetables/breadloaf.jpg" >
+            <h4> Mango Bread Loaf</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="vegetables/kabocha.jpg" >
+            <h4> Kabocha Salad</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="vegetables/coconut.jpg" >
+            <h4>Guava in Coconut Cream</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="vegetables/pusongsanging.jpg" >
+            <h4> Kilawing Puso ng Saging</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="vegetables/ginataangpuso.jpg" >
+            <h4> Ginataang Puso ng Saging</h4>
+            <button>Order</button>
+        </div>
+        <div class="item">
+            <img src="vegetables/pinakbet.jpg" >
+            <h4> Pinakbet Tagalog</h4>
+            <button>Order</button>
+        </div>  
+       
+        </div>            
+       </section>
+   
+
+    </body>
+</html>
